@@ -1,0 +1,17 @@
+====================
+INICIO
+Tue Oct 13 12:14:31 PM -03 2026
+====================
+
+===== RESULTADOS =====
+
+Melhores hiperparâmetros:
+{'n_estimators': 477, 'max_depth': 24, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': None, 'bootstrap': True}
+
+Melhor RMSE médio: 1.1711
+
+Tempo de execução: 235.77 segundos
+====================
+FIM
+Tue Oct 13 12:20:50 PM -03 2026
+====================
