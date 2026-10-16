@@ -55,22 +55,6 @@ Além da comparação tradicional por divisão treino-teste, também foram empre
 
 ---
 
-## ⚡ Uso do cluster Heisenberg
-
-Parte deste projeto utilizou recursos de Computação de Alto Desempenho (*High Performance Computing* – HPC) por meio do cluster **Heisenberg**, infraestrutura computacional disponibilizada pela Ilum Escola de Ciência para atividades acadêmicas e científicas que demandam elevado poder de processamento.
-
-O uso do cluster foi fundamental para a otimização dos modelos de Floresta Aleatória e Gradient Boosting, possibilitando a execução de centenas de trials com validação cruzada por meio do módulo Optuna. A utilização do HPC permitiu expandir significativamente o espaço de busca dos hiperparâmetros e reduzir o tempo total necessário para a realização dos experimentos.
-
-Os scripts utilizados nessas execuções encontram-se nos diretórios:
-
-```text
-random_forest_hpc/
-gradient_boosting_hpc/
-```
-Essas pastas incluem scripts de treinamento, arquivos de submissão dos jobs, históricos de trials e logs completos das execuções.
-
----
-
 ## ▶️ Como executar
 
 ### Requisitos
@@ -104,6 +88,22 @@ pip install pandas numpy matplotlib seaborn scikit-learn optuna
 1. Abra o arquivo `Tiamat.ipynb` na sua IDE de preferência.
 2. Certifique-se de selecionar o kernel do Python onde as dependências foram instaladas.
 3. Execute as células sequencialmente para reproduzir os resultados apresentados no trabalho.
+
+---
+
+## ⚡ Uso do cluster Heisenberg
+
+Parte deste projeto utilizou recursos de Computação de Alto Desempenho (*High Performance Computing* – HPC) por meio do cluster **Heisenberg**, infraestrutura computacional disponibilizada pela Ilum Escola de Ciência para atividades acadêmicas e científicas que demandam elevado poder de processamento.
+
+O uso do cluster foi fundamental para a otimização dos modelos de Floresta Aleatória e Gradient Boosting, possibilitando a execução de centenas de trials com validação cruzada por meio do módulo Optuna. A utilização do HPC permitiu expandir significativamente o espaço de busca dos hiperparâmetros e reduzir o tempo total necessário para a realização dos experimentos.
+
+Os scripts utilizados nessas execuções encontram-se nos diretórios:
+
+```text
+random_forest_hpc/
+gradient_boosting_hpc/
+```
+Essas pastas incluem scripts de treinamento, arquivos de submissão dos jobs, históricos de trials e logs completos das execuções.
 
 ---
 
