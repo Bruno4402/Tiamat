@@ -101,7 +101,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn optuna
 
 ### Execução
 
-1. Abra o arquivo `Tiamat.ipynb` na sua IDE de preferência (como o VS Code) ou no Jupyter.
+1. Abra o arquivo `Tiamat.ipynb` na sua IDE de preferência.
 2. Certifique-se de selecionar o kernel do Python onde as dependências foram instaladas.
 3. Execute as células sequencialmente para reproduzir os resultados apresentados no trabalho.
 
