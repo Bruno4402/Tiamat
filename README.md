@@ -1,2 +1,44 @@
-# Tiamat
-Repositório para armazenar a entrega do Tiamat, projeto final da disciplina de Aprendizado de Máquina, do 2º semestre da Ilum
+![Ilum Escola de Ciência, CNPEM](https://pages.cnpem.br/workshopbioimagens/wp-content/uploads/sites/166/2023/06/logo-ilum.png)
+
+
+<h1 align="center">Tiamat</h1>
+
+**Nome:** Bruno Bini Camargo  | **Turma:** T26 <br>
+**Instituição:** Ilum Escola de Ciência, CNPEM, Campinas
+
+Repositório para armazenar a entrega do Tiamat, projeto final da disciplina de Aprendizado de Máquina, do 2° semestre do curso de Ciência e Tecnologia na Ilum.
+
+## 🚀 Sobre o projeto:
+
+Este projeto utiliza dados do ranking das melhores 500 escolas no ENEM 2025 para investigar a capacidade de diferentes algoritmos de Aprendizado de Máquina em prever a média nacional (com redação). Foram avaliados modelos lineares, baseados em vizinhos e baseados em árvores, incluindo Regressão Linear, Lasso, Ridge, k-NN, Árvore de Decisão, Floresta Aleatória e Gradient Boosting.
+
+Além da comparação tradicional por divisão treino-teste, também foram empregadas técnicas de validação cruzada, otimização de hiperparâmetros com Optuna e análise de interpretabilidade por meio de Permutation Importance.
+
+## :open_file_folder: Arquivos do repositório:
+
+* :page_facing_up: **.gitignore**: Contém informações para ignorar arquivos desnecessários no Git.
+* :memo: **Tiamat.ipynb**: Contém o notebook Jupyter do projeto.
+* 💹 **Enem_Acompanhamento_de_escolas_2025.xlsx**: Contém dataset utilizado no projeto.
+* :balance_scale: **LICENSE**: Contém informações da licença desse projeto, a GNU General Public License v2.0.
+* :book: **README.md**: Contém a documentação principal do projeto.
+* :open_file_folder: **gradient_boosting_hpc/**: Pasta que contém os scripts e arquivos de configuração para a execução do modelo de Gradient Boosting usando recursos de Computação de Alto Desempenho (HPC).
+    * :page_facing_up: **gb_19966.out**: Arquivo de log com o resultado e a saída gerada pela execução do job no cluster.
+    * :page_facing_up: **gradient_boosting_optuna.py**: Script Python que executa o treinamento do Gradient Boosting utilizando o Optuna para a otimização de hiperparâmetros.
+    * :page_facing_up: **job_gb.sh**: Script de shell (Bash) utilizado para submeter e gerenciar a execução do trabalho do Gradient Boosting no cluster HPC.
+    * :page_facing_up: **trials_gradient_boosting_csv**: Arquivo estruturado que armazena o histórico e os resultados de cada tentativa (trial) do Gradient Boosting realizada pelo Optuna.
+* :open_file_folder: **random_forest_hpc/**: Pasta que contém os scripts e arquivos de configuração para a execução do modelo Floresta Aleatória em ambiente de Computação de Alto Desempenho (HPC).
+    * :page_facing_up: **job_rf.sh**: Script de shell (Bash) utilizado para submeter e gerenciar a execução do trabalho da Floresta Aleatória no cluster HPC.
+    * :page_facing_up: **random_forest_optuna.py**: Script Python que executa o treinamento da Floresta Aleatória utilizando o Optuna para a otimização de hiperparâmetros.
+    * :page_facing_up: **rf_19963.out**: Arquivo de log com o resultado e a saída gerada pela execução do job no cluster.
+    * :page_facing_up: **trials_random_forest.csv**: Arquivo estruturado que armazena o histórico e os resultados de cada tentativa (trial) da Floresta Aleatória realizada pelo Optuna.
+
+## 🖥️ Ferramentas usadas no projeto:
+
+- **Jupyter Lab** para desenvolvimento do código.
+  - **Módulos** utilizados em Python: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn e Optuna.
+- **Computação de Alto Desempenho (HPC)** para a otimização de hiperparâmetros nos modelos Floresta Aleatória e Gradient Boosting.
+- **IA** para resolução de dúvidas de sintaxe, correção de bugs e lógicas dos modelos, auxílio na elaboração de gráficos complexos, uso do HPC e análise diagnóstica da atividade, indicando melhorias.
+
+## 📚 Fundamentação metodológica:
+
+Os conceitos teóricos, estratégias de modelagem e procedimentos metodológicos empregados neste trabalho foram fundamentados nos materiais didáticos e notebooks Jupyter disponibilizados ao longo da disciplina de Aprendizado de Máquina da Ilum Escola de Ciência, ministrada pelo Prof. Daniel Roberto Cassar, complementados pela documentação oficial das bibliotecas utilizadas e pelas referências citadas no notebook do projeto.
