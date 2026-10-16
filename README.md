@@ -8,11 +8,24 @@
 
 Repositório para armazenar a entrega do Tiamat, projeto final da disciplina de Aprendizado de Máquina, do 2° semestre do curso de Ciência e Tecnologia na Ilum.
 
+---
+
 ## 🚀 Sobre o projeto:
 
 Este projeto utiliza dados do ranking das melhores 500 escolas no ENEM 2025 para investigar a capacidade de diferentes algoritmos de Aprendizado de Máquina em prever a média nacional (com redação). Foram avaliados modelos lineares, baseados em vizinhos e baseados em árvores, incluindo Regressão Linear, Lasso, Ridge, k-NN, Árvore de Decisão, Floresta Aleatória e Gradient Boosting.
 
 Além da comparação tradicional por divisão treino-teste, também foram empregadas técnicas de validação cruzada, otimização de hiperparâmetros com Optuna e análise de interpretabilidade por meio de Permutation Importance.
+
+---
+
+## 📈 Principais resultados
+
+- O Gradient Boosting foi selecionado como modelo final após apresentar o menor RMSE entre todos os algoritmos avaliados.
+- Modelos baseados em árvores superaram consistentemente modelos lineares e o k-NN.
+- A validação cruzada confirmou a robustez e a capacidade de generalização do modelo selecionado.
+- A técnica de Permutation Importance revelou que indicadores de desempenho acadêmico foram muito mais relevantes para as previsões do que variáveis relacionadas à localização geográfica das escolas.
+
+---
 
 ## :open_file_folder: Arquivos do repositório:
 
@@ -31,13 +44,68 @@ Além da comparação tradicional por divisão treino-teste, também foram empre
     * :page_facing_up: **random_forest_optuna.py**: Script Python que executa o treinamento da Floresta Aleatória utilizando o Optuna para a otimização de hiperparâmetros.
     * :page_facing_up: **rf_19963.out**: Arquivo de log com o resultado e a saída gerada pela execução do job no cluster.
     * :page_facing_up: **trials_random_forest.csv**: Arquivo estruturado que armazena o histórico e os resultados de cada tentativa (trial) da Floresta Aleatória realizada pelo Optuna.
+ 
+---
 
 ## 🖥️ Ferramentas usadas no projeto:
 
 - **Jupyter Lab** para desenvolvimento do código.
   - **Módulos** utilizados em Python: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn e Optuna.
-- **Computação de Alto Desempenho (HPC)** para a otimização de hiperparâmetros nos modelos Floresta Aleatória e Gradient Boosting.
 - **IA** para resolução de dúvidas de sintaxe, correção de bugs e lógicas dos modelos, auxílio na elaboração de gráficos complexos, uso do HPC e análise diagnóstica da atividade, indicando melhorias.
+
+---
+
+## ⚡ Uso do cluster Heisenberg
+
+Parte deste projeto utilizou recursos de Computação de Alto Desempenho (*High Performance Computing* – HPC) por meio do cluster **Heisenberg**, infraestrutura computacional disponibilizada pela Ilum Escola de Ciência para atividades acadêmicas e científicas que demandam elevado poder de processamento.
+
+O uso do cluster foi fundamental para a otimização dos modelos de Floresta Aleatória e Gradient Boosting, possibilitando a execução de centenas de trials com validação cruzada por meio do módulo Optuna. A utilização do HPC permitiu expandir significativamente o espaço de busca dos hiperparâmetros e reduzir o tempo total necessário para a realização dos experimentos.
+
+Os scripts utilizados nessas execuções encontram-se nos diretórios:
+
+```text
+random_forest_hpc/
+gradient_boosting_hpc/
+```
+Essas pastas incluem scripts de treinamento, arquivos de submissão dos jobs, históricos de trials e logs completos das execuções.
+
+---
+
+## ▶️ Como executar
+
+### Requisitos
+
+- Python 3.11 ou superior
+- Ambiente de execução de Notebooks (VS Code, JupyterLab, Jupyter Notebook, etc.)
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Optuna
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone <URL_DO_REPOSITORIO> **mudar isso depois de deixar público**
+cd Tiamat
+```
+
+Instale as dependências necessárias:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn optuna
+```
+
+### Execução
+
+1. Abra o arquivo `Tiamat.ipynb` na sua IDE de preferência (como o VS Code) ou no Jupyter.
+2. Certifique-se de selecionar o kernel do Python onde as dependências foram instaladas.
+3. Execute as células sequencialmente para reproduzir os resultados apresentados no trabalho.
+
+---
 
 ## 📚 Fundamentação metodológica:
 
