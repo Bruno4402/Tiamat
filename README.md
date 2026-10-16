@@ -10,7 +10,7 @@ Repositório para armazenar a entrega do Tiamat, projeto final da disciplina de 
 
 ---
 
-## 🚀 Sobre o projeto:
+## 🚀 Sobre o projeto
 
 Este projeto utiliza dados do ranking das melhores 500 escolas no ENEM 2025 para investigar a capacidade de diferentes algoritmos de Aprendizado de Máquina em prever a média nacional (com redação). Foram avaliados modelos lineares, baseados em vizinhos e baseados em árvores, incluindo Regressão Linear, Lasso, Ridge, k-NN, Árvore de Decisão, Floresta Aleatória e Gradient Boosting.
 
@@ -27,7 +27,7 @@ Além da comparação tradicional por divisão treino-teste, também foram empre
 
 ---
 
-## :open_file_folder: Arquivos do repositório:
+## :open_file_folder: Arquivos do repositório
 
 * :page_facing_up: **.gitignore**: Contém informações para ignorar arquivos desnecessários no Git.
 * :memo: **Tiamat.ipynb**: Contém o notebook Jupyter do projeto.
@@ -47,7 +47,7 @@ Além da comparação tradicional por divisão treino-teste, também foram empre
  
 ---
 
-## 🖥️ Ferramentas usadas no projeto:
+## 🖥️ Ferramentas usadas no projeto
 
 - **Jupyter Lab** para desenvolvimento do código.
   - **Módulos** utilizados em Python: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn e Optuna.
@@ -107,6 +107,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn optuna
 
 ---
 
-## 📚 Fundamentação metodológica:
+## 📚 Fundamentação metodológica
 
 Os conceitos teóricos, estratégias de modelagem e procedimentos metodológicos empregados neste trabalho foram fundamentados nos materiais didáticos e notebooks Jupyter disponibilizados ao longo da disciplina de Aprendizado de Máquina da Ilum Escola de Ciência, ministrada pelo Prof. Daniel Roberto Cassar, complementados pela documentação oficial das bibliotecas utilizadas e pelas referências citadas no notebook do projeto.
