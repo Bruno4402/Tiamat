@@ -9,12 +9,12 @@
 Repositório para armazenar a entrega do Tiamat, projeto final da disciplina de Aprendizado de Máquina, do 2° semestre do curso de Ciência e Tecnologia na Ilum.
 
 <p align="center">
-  <img src="Brasão%20da%20Casa%20Onurb.png" alt="Brasão da Casa Onurb" width="300">
+  <img src="Brasão%20da%20Casa%20Onurb.png" alt="Brasão da Casa Onurb" width="200">
 </p>
 
 ## 🚀 Sobre o projeto
 
-Este projeto utiliza dados do ranking das melhores 500 escolas no ENEM 2025 para investigar a capacidade de diferentes algoritmos de Aprendizado de Máquina em prever a média nacional (com redação). Foram avaliados modelos lineares, baseados em vizinhos e baseados em árvores, incluindo Regressão Linear, Lasso, Ridge, k-NN, Árvore de Decisão, Floresta Aleatória e Gradient Boosting.
+Este projeto utiliza dados do ranking das 500 melhores escolas no ENEM 2025 para investigar a capacidade de diferentes algoritmos de Aprendizado de Máquina em prever a média nacional (com redação). Foram avaliados modelos lineares, baseados em vizinhos e baseados em árvores, incluindo Regressão Linear, Lasso, Ridge, k-NN, Árvore de Decisão, Floresta Aleatória e Gradient Boosting.
 
 Além da comparação tradicional por divisão treino-teste, também foram empregadas técnicas de validação cruzada, otimização de hiperparâmetros com Optuna e análise de interpretabilidade por meio de Permutation Importance.
 
@@ -99,16 +99,14 @@ Parte deste projeto utilizou recursos de Computação de Alto Desempenho (*High 
 
 O uso do cluster foi fundamental para a otimização dos modelos de Floresta Aleatória e Gradient Boosting, possibilitando a execução de centenas de trials com validação cruzada por meio do módulo Optuna. A utilização do HPC permitiu expandir significativamente o espaço de busca dos hiperparâmetros e reduzir o tempo total necessário para a realização dos experimentos.
 
-Os scripts utilizados nessas execuções encontram-se nos diretórios:
+Os scripts de treinamento, arquivos de submissão dos jobs, históricos de trials e logs completos das execuções utilizados nessas execuções encontram-se nos diretórios:
 
 ```text
 random_forest_hpc/
 gradient_boosting_hpc/
 ```
-Essas pastas incluem scripts de treinamento, arquivos de submissão dos jobs, históricos de trials e logs completos das execuções.
-
 ---
 
 ## 📚 Fundamentação metodológica
 
-Os conceitos teóricos, estratégias de modelagem e procedimentos metodológicos empregados neste trabalho foram fundamentados nos materiais didáticos e notebooks Jupyter disponibilizados ao longo da disciplina de Aprendizado de Máquina da Ilum Escola de Ciência, ministrada pelo Prof. Daniel Roberto Cassar, complementados pela documentação oficial das bibliotecas utilizadas e pelas referências citadas no notebook do projeto.
+Os conceitos teóricos, estratégias de modelagem e procedimentos metodológicos empregados neste trabalho foram fundamentados nos materiais didáticos e notebooks Jupyter disponibilizados ao longo da disciplina de Aprendizado de Máquina, ministrada pelo Prof. Daniel Roberto Cassar, da Ilum Escola de Ciência. Complementarmente, foram utilizadas a documentação oficial das bibliotecas empregadas e as referências bibliográficas citadas ao longo do texto.
