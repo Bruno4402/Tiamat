@@ -8,7 +8,9 @@
 
 Repositório para armazenar a entrega do Tiamat, projeto final da disciplina de Aprendizado de Máquina, do 2° semestre do curso de Ciência e Tecnologia na Ilum.
 
----
+<p align="center">
+  <img src="Brasão%20da%20Casa%20Onurb.png" alt="Brasão da Casa Onurb" width="300">
+</p>
 
 ## 🚀 Sobre o projeto
 
