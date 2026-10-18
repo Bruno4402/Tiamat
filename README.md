@@ -75,7 +75,7 @@ Além da comparação tradicional por divisão treino-teste, também foram empre
 Clone o repositório:
 
 ```bash
-git clone <URL_DO_REPOSITORIO> **mudar isso depois de deixar público**
+git clone <https://github.com/Bruno4402/Tiamat.git>
 cd Tiamat
 ```
 
